@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_84fd965ba14771c66c77434e5dbbab22 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 80.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_84fd965ba14771c66c77434e5dbbab22" ></div>
+        
+</body>
+<script>    
+    
+            var map_84fd965ba14771c66c77434e5dbbab22 = L.map(
+                "map_84fd965ba14771c66c77434e5dbbab22",
+                {
+                    center: [42.047662, 43.622645],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[43.67423, 39.423066], [41.027986, 46.920744]],
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9156203fa641fe66bad16d8e9406600e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 10, "maxZoom": 10, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            var circle_69eb1279a1134db4d077b819852c0ce0 = L.circle(
+                [41.675, 42.70333333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1040.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_69eb1279a1134db4d077b819852c0ce0.bindTooltip(
+                `<div>
+                     ადიგენი:13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4206ef9e1650aa2a9837c804a88d1f0d = L.circle(
+                [41.57333333333333, 43.25],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2250.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_4206ef9e1650aa2a9837c804a88d1f0d.bindTooltip(
+                `<div>
+                     ასპინძა:9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_63e1bee1aa091dd0675f6ff8d1377ecf = L.circle(
+                [41.40555555555556, 43.48611111111111],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1040.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_63e1bee1aa091dd0675f6ff8d1377ecf.bindTooltip(
+                `<div>
+                     ახალქალაქი:13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_80585e1e65de1448e9b5077e30120fd3 = L.circle(
+                [41.26444444444444, 43.59083333333334],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2250.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_80585e1e65de1448e9b5077e30120fd3.bindTooltip(
+                `<div>
+                     ნინოწმინდა:9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_db7633316969ce23641b61cc7d66547f = L.circle(
+                [41.63888888888889, 42.98611111111111],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2320.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_db7633316969ce23641b61cc7d66547f.bindTooltip(
+                `<div>
+                     ახალციხე:29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_243d68610e34e7e810f09be8ba564d26 = L.circle(
+                [42.03333333333333, 45.2],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 960.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_243d68610e34e7e810f09be8ba564d26.bindTooltip(
+                `<div>
+                     ახმეტა:12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_51410f5494f2bc0e8894b54e995c9b16 = L.circle(
+                [42.15, 41.66666666666666],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4960.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_51410f5494f2bc0e8894b54e995c9b16.bindTooltip(
+                `<div>
+                     ფოთი:62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7b8a7a8e330943ed851d338fab9cc41f = L.circle(
+                [41.92694444444444, 42.00055555555556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1840.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_7b8a7a8e330943ed851d338fab9cc41f.bindTooltip(
+                `<div>
+                     ოზურგეთი:23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8a0d0962d531c477af71b0b99bff726f = L.circle(
+                [42.32638888888889, 42.60055555555556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 750.0, "stroke": true, "weight": 3}
+            ).addTo(map_84fd965ba14771c66c77434e5dbbab22);
+        
+    
+            circle_8a0d0962d531c477af71b0b99bff726f.bindTooltip(
+                `<div>
+                     წყალტუბო:3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

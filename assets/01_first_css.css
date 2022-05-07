@@ -1,0 +1,42 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/bpg_nino_mtavruli_normal.ttf');
+}
+
+* {
+    font-family: "BPG Nino Mtavruli", sans-serif;;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+#mySlider {
+    cursor: pointer;
+}
+
+.rc-slider-track {
+    background-color: #ff5859;
+}
+
+.rc-slider-dot-active {
+    border: solid 2px #ff5859;
+}
+
+.rc-slider-handle {
+    background-color: #ff5859;
+    border-color: #ff5859;
+}
+
+.rc-slider-handle:hover {
+    border-color: #ff5859;
+}
+
+.rc-slider-handle-active:active {
+    border-color: #ff5859;
+}
+
+#goingTop {
+    margin-top: -140px;
+}

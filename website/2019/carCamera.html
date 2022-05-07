@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f250ff1d77b8dd44c098ec9b47c54ce5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 80.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f250ff1d77b8dd44c098ec9b47c54ce5" ></div>
+        
+</body>
+<script>    
+    
+            var map_f250ff1d77b8dd44c098ec9b47c54ce5 = L.map(
+                "map_f250ff1d77b8dd44c098ec9b47c54ce5",
+                {
+                    center: [42.047662, 43.622645],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[43.67423, 39.423066], [41.027986, 46.920744]],
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15ca29e1930d9ccda829f2f700bb2659 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 10, "maxZoom": 10, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            var circle_9ebf314d1a95d2ddbf5a795a7ee07927 = L.circle(
+                [41.7225, 44.7925],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3360.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_9ebf314d1a95d2ddbf5a795a7ee07927.bindTooltip(
+                `<div>
+                     თბილისი:42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dc3fa1712ffff17e6ea675b00605fb0c = L.circle(
+                [41.64583333333334, 41.64166666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5520.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_dc3fa1712ffff17e6ea675b00605fb0c.bindTooltip(
+                `<div>
+                     ბათუმი:69
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7cb7e7614d2b4a5cac7f2246545c0ec4 = L.circle(
+                [41.53333333333333, 45.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_7cb7e7614d2b4a5cac7f2246545c0ec4.bindTooltip(
+                `<div>
+                     რუსთავი:25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8816fefa49e4beb8178e8d7073dca760 = L.circle(
+                [41.81111111111111, 41.77527777777778],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1760.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_8816fefa49e4beb8178e8d7073dca760.bindTooltip(
+                `<div>
+                     ქობულეთი:22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d01dca86e09b30c49f02702091adfd05 = L.circle(
+                [42.15, 41.66666666666666],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2240.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_d01dca86e09b30c49f02702091adfd05.bindTooltip(
+                `<div>
+                     ფოთი:28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0cd3c1e9bcfcc92210f62886c1e1c393 = L.circle(
+                [41.91666666666666, 45.48333333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1280.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_0cd3c1e9bcfcc92210f62886c1e1c393.bindTooltip(
+                `<div>
+                     თელავი:16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8f34cb096eaf3c2f9b7e128e094ce9c1 = L.circle(
+                [41.61861111111111, 45.92166666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_8f34cb096eaf3c2f9b7e128e094ce9c1.bindTooltip(
+                `<div>
+                     სიღნაღი:6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cb2cc260f88d8452e6645e7fd8631a72 = L.circle(
+                [41.82222222222222, 46.275],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_cb2cc260f88d8452e6645e7fd8631a72.bindTooltip(
+                `<div>
+                     ლაგოდეხი:15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9e12b8a024047c558a1568361f89a8e2 = L.circle(
+                [41.73333333333333, 45.33333333333334],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_9e12b8a024047c558a1568361f89a8e2.bindTooltip(
+                `<div>
+                     საგარეჯო:10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_aed5d045731a8e2b9436c037eaff5809 = L.circle(
+                [42.10833333333333, 44.96527777777778],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_aed5d045731a8e2b9436c037eaff5809.bindTooltip(
+                `<div>
+                     თიანეთი:10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e0afeba82218e748d8f3d6b41e80bf1a = L.circle(
+                [41.74444444444445, 45.8],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1040.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_e0afeba82218e748d8f3d6b41e80bf1a.bindTooltip(
+                `<div>
+                     გურჯაანი:13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_65fa912081ec762409d4b1f2e397d68e = L.circle(
+                [42.0875, 42.03333333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1750.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_65fa912081ec762409d4b1f2e397d68e.bindTooltip(
+                `<div>
+                     ლანჩხუთი:7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fd85f4016336bb8db7f8cc8edda081ce = L.circle(
+                [42.31666666666667, 41.9],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 880.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_fd85f4016336bb8db7f8cc8edda081ce.bindTooltip(
+                `<div>
+                     ხობი:11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f08812e25836ce08fe52be82b6230671 = L.circle(
+                [42.08388888888889, 42.51194444444445],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_f08812e25836ce08fe52be82b6230671.bindTooltip(
+                `<div>
+                     ვანი:6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7152742e17b5e50adfcc5374a69fb31b = L.circle(
+                [42.18333333333333, 42.97722222222222],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_7152742e17b5e50adfcc5374a69fb31b.bindTooltip(
+                `<div>
+                     თერჯოლა:6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f8a911411281ac4554cb9ecfe00fd9e6 = L.circle(
+                [43.04555555555555, 42.72972222222222],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1250.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_f8a911411281ac4554cb9ecfe00fd9e6.bindTooltip(
+                `<div>
+                     მესტია:5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_57ad329d6cb49c79d6a421b50f50b860 = L.circle(
+                [41.9975, 43.59861111111111],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_57ad329d6cb49c79d6a421b50f50b860.bindTooltip(
+                `<div>
+                     ხაშური:15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a3437e767f5a9516fb0985a19ff05ae0 = L.circle(
+                [42.32638888888889, 42.60055555555556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_a3437e767f5a9516fb0985a19ff05ae0.bindTooltip(
+                `<div>
+                     წყალტუბო:10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dda3e126018e3539846b6bcac6845acd = L.circle(
+                [42.35027777777778, 42.99833333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2250.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_dda3e126018e3539846b6bcac6845acd.bindTooltip(
+                `<div>
+                     ტყიბული:9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_664c2e76243f72f085b2995186349241 = L.circle(
+                [41.85, 44.71666666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1920.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_664c2e76243f72f085b2995186349241.bindTooltip(
+                `<div>
+                     მცხეთა:24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_48cb7d5a0da41dc1adac2a5f0a301686 = L.circle(
+                [41.83888888888889, 43.37916666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_48cb7d5a0da41dc1adac2a5f0a301686.bindTooltip(
+                `<div>
+                     ბორჯომი:4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_54532e43fd09a93a983d85b22c04e755 = L.circle(
+                [41.45, 45.1],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4320.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_54532e43fd09a93a983d85b22c04e755.bindTooltip(
+                `<div>
+                     გარდაბანი:54
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_59b983ebf65d23d015163722410f0c28 = L.circle(
+                [41.585556, 41.668889],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1440.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_59b983ebf65d23d015163722410f0c28.bindTooltip(
+                `<div>
+                     ხელვაჩაურის მინუციპალიტეტი:18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_17c45e268f296a3c502b26224901784d = L.circle(
+                [41.26444444444444, 43.59083333333334],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_17c45e268f296a3c502b26224901784d.bindTooltip(
+                `<div>
+                     ნინოწმინდა:10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6b161b1e5eab32854317e6221681d51c = L.circle(
+                [41.45, 44.53333333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_6b161b1e5eab32854317e6221681d51c.bindTooltip(
+                `<div>
+                     ბოლნისი:8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f2ac70248077217079f5ec6c2b084e16 = L.circle(
+                [42.78888888888889, 42.72361111111111],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_f2ac70248077217079f5ec6c2b084e16.bindTooltip(
+                `<div>
+                     ლენტეხი:2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8c0b21097b848e05163ab9e267af5b27 = L.circle(
+                [42.64722222222223, 42.77],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 750.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_8c0b21097b848e05163ab9e267af5b27.bindTooltip(
+                `<div>
+                     ცაგერი:3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e43f02e3d549776b0c8e3cc2289f696a = L.circle(
+                [42.1625, 42.34166666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1600.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_e43f02e3d549776b0c8e3cc2289f696a.bindTooltip(
+                `<div>
+                     სამტრედია:20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_827129c4b7c138dcbe8b36094f55e0b8 = L.circle(
+                [42.61166666666666, 42.07055555555556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1120.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_827129c4b7c138dcbe8b36094f55e0b8.bindTooltip(
+                `<div>
+                     წალენჯიხა:14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_02d5b2d792d2ca147ce093662ab6da3d = L.circle(
+                [42.41388888888889, 42.37777777777778],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_02d5b2d792d2ca147ce093662ab6da3d.bindTooltip(
+                `<div>
+                     მარტვილი:15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_60a989ffc907dfc1b549ac237f71d6bd = L.circle(
+                [42.26888888888889, 42.06777777777778],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1280.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_60a989ffc907dfc1b549ac237f71d6bd.bindTooltip(
+                `<div>
+                     სენაკი:16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_85ebc5709cb0de142d5c3b4b4e0ca28c = L.circle(
+                [41.633333, 42.183333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_85ebc5709cb0de142d5c3b4b4e0ca28c.bindTooltip(
+                `<div>
+                     შუახევის მუნიციპალიტეტი:6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e8fc736abf0ab6034d98f479bce28dd0 = L.circle(
+                [41.92694444444444, 42.00055555555556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1680.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_e8fc736abf0ab6034d98f479bce28dd0.bindTooltip(
+                `<div>
+                     ოზურგეთი:21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_37bb1fa8baf9f32ebea3f3144bc2e3cc = L.circle(
+                [42.29027777777777, 43.28194444444444],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_37bb1fa8baf9f32ebea3f3144bc2e3cc.bindTooltip(
+                `<div>
+                     ჭიათურა:6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1ee70da3e31485be35b0a1cda8f0776b = L.circle(
+                [42.03333333333333, 45.2],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1040.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_1ee70da3e31485be35b0a1cda8f0776b.bindTooltip(
+                `<div>
+                     ახმეტა:13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0a505a522629055c05168a7c40c7dcbd = L.circle(
+                [41.675, 42.70333333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1120.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_0a505a522629055c05168a7c40c7dcbd.bindTooltip(
+                `<div>
+                     ადიგენი:14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2e9809418e918537416132416240991a = L.circle(
+                [41.63888888888889, 42.98611111111111],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_2e9809418e918537416132416240991a.bindTooltip(
+                `<div>
+                     ახალციხე:2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_14152355382e4109a4db765d7d171632 = L.circle(
+                [41.57333333333333, 43.25],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1250.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_14152355382e4109a4db765d7d171632.bindTooltip(
+                `<div>
+                     ასპინძა:5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_956f977e2ba4effba0b434dda54d0d29 = L.circle(
+                [41.97694444444444, 44.1025],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1440.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_956f977e2ba4effba0b434dda54d0d29.bindTooltip(
+                `<div>
+                     გორი:18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_62702e95f57dcc03f92507c4ee871e31 = L.circle(
+                [42.58333333333334, 43.44305555555555],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1750.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_62702e95f57dcc03f92507c4ee871e31.bindTooltip(
+                `<div>
+                     ონი:7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5e3899b9b382dbf2798434c6dd01594f = L.circle(
+                [41.58333333333334, 44.08333333333334],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1600.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_5e3899b9b382dbf2798434c6dd01594f.bindTooltip(
+                `<div>
+                     წალკა:20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_adda7d16767e1820a43d91213a97674a = L.circle(
+                [41.95, 45.81666666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1440.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_adda7d16767e1820a43d91213a97674a.bindTooltip(
+                `<div>
+                     ყვარელი:18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_72964df3c26cd53daf0a86f263466df5 = L.circle(
+                [42.10833333333333, 43.04166666666666],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1040.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_72964df3c26cd53daf0a86f263466df5.bindTooltip(
+                `<div>
+                     ზესტაფონი:13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_17260b16e2901d6a54c536aea39614ea = L.circle(
+                [42.52222222222223, 42.12916666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_17260b16e2901d6a54c536aea39614ea.bindTooltip(
+                `<div>
+                     ჩხოროწყუ:10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a240a28f8c4b9df359d6363f997b37ad = L.circle(
+                [42.01666666666667, 43.2],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_a240a28f8c4b9df359d6363f997b37ad.bindTooltip(
+                `<div>
+                     ხარაგაული:6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b4ae77aa98210e6a01efac6108b8566f = L.circle(
+                [42.01888888888889, 42.23944444444444],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_b4ae77aa98210e6a01efac6108b8566f.bindTooltip(
+                `<div>
+                     ჩოხატაური:4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5b94bdda551500455497d1028a3d97a9 = L.circle(
+                [41.59777777777778, 41.9425],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1750.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_5b94bdda551500455497d1028a3d97a9.bindTooltip(
+                `<div>
+                     ქედა:7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5b0b5acacf87135adc500a1a41ad0aaa = L.circle(
+                [42.02138888888889, 43.89305555555556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_5b0b5acacf87135adc500a1a41ad0aaa.bindTooltip(
+                `<div>
+                     ქარელი:15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3106230e180001b7c64184fbe9f9eec8 = L.circle(
+                [42.32444444444445, 42.42222222222222],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1250.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_3106230e180001b7c64184fbe9f9eec8.bindTooltip(
+                `<div>
+                     ხონი:5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8d4778d7a51dc43721c7df3b3cb89463 = L.circle(
+                [41.55, 44.46666666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1600.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_8d4778d7a51dc43721c7df3b3cb89463.bindTooltip(
+                `<div>
+                     თეთრიწყარო:20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d13561d0f6b3f4b4d4d449674179b375 = L.circle(
+                [42.50833333333333, 41.86666666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2160.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_d13561d0f6b3f4b4d4d449674179b375.bindTooltip(
+                `<div>
+                     ზუგდიდი:27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ce86653d4d8b3e60d782104d16806e78 = L.circle(
+                [41.64444444444445, 42.31388888888889],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 750.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_ce86653d4d8b3e60d782104d16806e78.bindTooltip(
+                `<div>
+                     ხულო:3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8cf1dcac671a301990f9b85c76571df7 = L.circle(
+                [42.6575, 44.645278],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1280.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_8cf1dcac671a301990f9b85c76571df7.bindTooltip(
+                `<div>
+                     ყაზბეგის მუნიციპალიტეტი:16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5fbeaa7e3a49005167a44037fdbc44e0 = L.circle(
+                [41.33166666666666, 44.20361111111111],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2250.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_5fbeaa7e3a49005167a44037fdbc44e0.bindTooltip(
+                `<div>
+                     დმანისი:9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b7c07a001559e752b5038647b3b5a4c0 = L.circle(
+                [42.08333333333334, 44.7],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1120.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_b7c07a001559e752b5038647b3b5a4c0.bindTooltip(
+                `<div>
+                     დუშეთი:14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_58bda71384d280d9254b7fac2608a94e = L.circle(
+                [42.33888888888889, 43.40388888888889],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1760.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_58bda71384d280d9254b7fac2608a94e.bindTooltip(
+                `<div>
+                     საჩხერე:22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_440d13d6334619b2fa8bc63265fd0d1e = L.circle(
+                [42.51944444444445, 43.15],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1280.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_440d13d6334619b2fa8bc63265fd0d1e.bindTooltip(
+                `<div>
+                     ამბროლაური:16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_89bfe5d6e7640136aaf1dd5af1bc2531 = L.circle(
+                [42.20416666666667, 42.20277777777778],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_89bfe5d6e7640136aaf1dd5af1bc2531.bindTooltip(
+                `<div>
+                     აბაშა:8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_218a78cc6369c307d7122c65a449f1cb = L.circle(
+                [41.925, 44.42222222222222],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1440.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_218a78cc6369c307d7122c65a449f1cb.bindTooltip(
+                `<div>
+                     კასპი:18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5eb3c42f25379dc948b5a3844b8e638b = L.circle(
+                [41.49694444444444, 44.81083333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6720.0, "stroke": true, "weight": 3}
+            ).addTo(map_f250ff1d77b8dd44c098ec9b47c54ce5);
+        
+    
+            circle_5eb3c42f25379dc948b5a3844b8e638b.bindTooltip(
+                `<div>
+                     მარნეული:84
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
