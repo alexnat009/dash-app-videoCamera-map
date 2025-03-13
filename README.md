@@ -49,8 +49,8 @@ The data used in this application is sourced from:
 
 ## Page example
 
-<img src="https://github.com/user-attachments/assets/7460a2bb-895a-4560-a6c6-b8afe9e3aad1" width="1200" height="780">
-<img src="https://github.com/user-attachments/assets/c8714ef9-5422-4427-b0f0-7dc5666f0590" width="1200" height="780">
+<img src="https://github.com/user-attachments/assets/7460a2bb-895a-4560-a6c6-b8afe9e3aad1" width="500" height="500">
+<img src="https://github.com/user-attachments/assets/c8714ef9-5422-4427-b0f0-7dc5666f0590" width="500" height="500">
 
 
 
